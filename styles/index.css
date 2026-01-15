@@ -70,3 +70,7 @@ body{
   transition: all 0.5s;
   background: #1b1b1b;
 }
+
+text-active {
+  color: red;
+}
