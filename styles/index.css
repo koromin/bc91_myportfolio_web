@@ -1,0 +1,72 @@
+/* body {
+  --text-color-active: red;
+}
+
+.header a.active {
+  color: var(--text-color-active) !important;
+}  Cach dat bien*/
+a.active {
+  color: var(--bs-success) !important;
+}
+.carousel-indicators .active {
+  background-color: var(--bs-success) !important;
+}
+/* nếu muốn đổi hệ màu đè lên màu của bootstrap thì chỉ cần
+body{
+    --bs-success: black;
+} */
+.header .navbar-nav {
+  gap: 10xp;
+}
+.header .navbar-nav li {
+  position: relative;
+}
+.header .navbar-nav li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  margin: 0 auto;
+  height: 3px;
+  background: green;
+  transition: all 0.5s;
+}
+.header .navbar-nav li:hover::after {
+  width: 90%;
+  transition: all 0.5s;
+}
+
+.carousel-demo {
+}
+
+.carousel-demo .carousel-item .img-carousel {
+  height: 100%;
+}
+
+.carousel-demo .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.available {
+  background: url(/img/3.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+}
+.available .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  min-height: 600px;
+  backdrop-filter: blur(1px);
+}
+.available .card {
+  background: rgba(45, 45, 45, 0.5);
+  backdrop-filter: blur(5px);
+}
+.available .card:hover {
+  cursor: pointer;
+  border: 1px solid #fff !important;
+  /* phai co important vi uu tien bs hon */
+  transition: all 0.5s;
+  background: #1b1b1b;
+}
